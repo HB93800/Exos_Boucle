@@ -51,41 +51,44 @@ alert('vous avez trouvé, bien joué !')*/
 
 /////////////////////////////////  Exercice WHILE N°3  /////////////////////////////////////////////////
 alert("On commence l\'exo3 !");
-
-var chx_nb = prompt('Saisir un nombre');
+var nb = 0;
+nb = prompt('Saisir un nombre');
 // On envoie un msg qui demande au user un nombre.
 //var i =0;
 //Création d'une variable i à laquelle on donne la valeur 0
-var chx_nbW = [];
 
+var tab_nb = [];
+//on crée une variable tableau
+let i=0;
 
-while (chx_nbW.length<6&&chx_nb!=0) {
-    //Tant que le choix user est différent de 0
-    //var chx_nbW = [];
-    chx_nbW.push(chx_nb);
+console.log(nb);
+tab_nb.push(nb);
+while (nb!=0 &&tab_nb[i]) {
+console.log(nb);
+//while (tab_nb.length<6&&nb!=0) {
+// on fait une boucle TANT QUE : 
+//le nombre de valeurs dans le tableau est inf à 6
+// & Tant que la variable nb choix user est différent de 0 >>>
+
+// om insère dans le tableau tab_nb le nombre nb choisi par le user    
+console.log(tab_nb);
+//on affiche tab_nb dans un C.log
     
-    console.log(chx_nbW); 
-    
-    
+var nb = prompt('Saisir un nombre');
+i++;
+//On impute un nouveau nombre nb
 
-    chx_nb = prompt('Resaisir un nombre');
-    //On impute au nombre chx_nb de chaque incrémentation de i une valeur saisie par le user
-    
-    //console.log(chx_nbW[i]);
-
-    //i++;    
-    //On incrémente i
-
-    //break;
+tab_nb.push(nb);
+// break mis pôur casser la boucle au moment de faire la boucle
 }
-
-
+console.log(tab_nb);
+/*
 // on sort quand on la bonne réponse
-chx_nbW.sort(function(a, b) {
+tab_nb.sort(function(a, b) {
   return b - a;
 });
-console.log(chx_nbW);
+console.log(tab_nb);
 
 alert('vous avez demandé à arrêter !')
 // on affiche au user un msg lui indiquant qu'il a bien répondu
-
+*/
